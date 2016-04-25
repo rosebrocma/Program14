@@ -20,7 +20,7 @@ class CustomSet:
                 tmp = ''
                 
                 tmp += '{'
-                for num in self._SetList:
+                for num in self._SetElements:
                     tmp += str(num) + ','
                 tmp += '}'
                 return tmp
