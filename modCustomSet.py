@@ -38,4 +38,33 @@ class CustomSet:
                 return  True
             else:
                 return False
-   
+
+    def __ge__(self,other):
+        """
+        Descriptions: Makes it able to so we can see objects of type CustomSet
+        are a superset of one another.
+        PreConditions: None
+        PostConditions: None
+        """
+        ct = 0
+        numsInOther=0
+        while ct < len(other._SetList):
+            for other._SetList[ct] in other._SetList:
+                if other._SetList[ct] in self._SetList:
+                    numsInOther+=1
+                    ct+=1
+                elif other._SetList[ct] not in self._SetList:
+                    numsInOther+=0
+                    ct+=1
+            if numsInOther == len(other._SetList):
+                return  True
+            else:
+                return False
+
+    def __len__(self):
+        """
+        Description: Makes it able to use len on objects of type CustomSet.
+        PreConditions: None
+        PostConditions: None
+        """
+        return len(self._SetList)
