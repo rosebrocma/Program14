@@ -18,10 +18,12 @@ class CustomSet:
                 PostConditions: makes a string based on private data
                 '''
                 tmp = ''
-                
                 tmp += '{'
                 for num in self._SetElements:
-                    tmp += str(num) + ','
+                    if num == self._SetElements[len(self._SetElements)-1]:
+                        tmp += str(num)
+                    else:
+                        tmp += str(num) + ','
                 tmp += '}'
                 return tmp
         
@@ -31,10 +33,7 @@ class CustomSet:
                 PreConditions: self and other must both be CustomSet objects
                 PostConditions: creates a new CustomSet object
                 '''
-                aList = self._SetElements
-                for item in other._SetElements:
-                    if item not in aList:
-                        aList.append(item)
+                aList = self._SetElements + other._SetElements
                 return CustomSet(aList)   
 
     
