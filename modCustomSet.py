@@ -1,7 +1,7 @@
 class CustomSet:
         def __init__(self, setList):
                 '''
-                Description: creates an object of CustomSet type
+                Description: (Matthew R. wrote this) creates an object of CustomSet type
                 PreConditions: setList must be a list
                 PostConditions: makes attributes private
                 '''
@@ -13,7 +13,7 @@ class CustomSet:
 
         def __str__(self):
                 '''
-                Description: returns a string of data from CustomSet class
+                Description: (Matthew R. wrote this) returns a string of data from CustomSet class
                 PreConditions: setList is a list
                 PostConditions: makes a string based on private data
                 '''
@@ -29,7 +29,7 @@ class CustomSet:
         
         def __add__(self, other):
                 '''
-                Description: adds to CustomSet objects together and returns it
+                Description: (Matthew R. wrote this) adds to CustomSet objects together and returns it
                 PreConditions: self and other must both be CustomSet objects
                 PostConditions: creates a new CustomSet object
                 '''
