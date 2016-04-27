@@ -32,7 +32,7 @@ class CustomSet:
         return CustomSet(aList)
     
 
-    def __rand__(self, other):
+    def __and__(self, other):
         '''Descriptioin - (Ryan wrote this method)takes the two sets and returns a new set with the union of the two
         PreCondition - self and other must both be of CustomSet objects
         PostCondition - a new CustomSet object is created'''
